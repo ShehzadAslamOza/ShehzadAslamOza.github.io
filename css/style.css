@@ -69,6 +69,9 @@
   margin-bottom: 0;
 }
 
+.form-control {
+  border: 3px dotted gray;
+}
 @media screen and (min-width: 751px) {
   .banner-heading {
     font-size: 80px;
