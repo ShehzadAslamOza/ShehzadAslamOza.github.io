@@ -3,13 +3,29 @@
   /* border: 2px solid red; */
 }
 
-.make-notes {
+.make-notes,
+.add-notes {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
+.make-notes a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 40px 5px 40px;
+}
+.add-notes {
+  margin-bottom: 10px;
+}
+
 .make-notes-btn {
+  font-size: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.add-notes-btn {
   padding: 10px 40px 10px 40px;
   font-size: 24px;
 }
@@ -22,11 +38,18 @@
   position: relative;
 }
 
+.notes-wrap {
+  padding: 120px 25px 300px 25px;
+  background-color: #fff79c;
+  border: 5px dashed black;
+  position: relative;
+}
+
 .form-btn {
   float: right;
 }
 .banner-wrap-contactus {
-  padding: 80px 25px 80px 25px;
+  padding: 60px 25px 60px 25px;
   margin-bottom: 50px;
 }
 
@@ -36,6 +59,11 @@
   margin-top: 5%;
 }
 
+.notes-container {
+  width: 95%;
+  margin: auto;
+  margin-top: 5%;
+}
 .banner-heading {
   text-align: center;
 }
@@ -72,6 +100,46 @@
 .form-control {
   border: 3px dotted gray;
 }
+
+.container-2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.container-3 {
+  display: none;
+  position: absolute;
+  top: 26%;
+  left: 40%;
+}
+
+#note-text {
+  box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  width: 275px;
+  height: 275px;
+  padding: 40px 25px 25px 25px;
+}
+
+#check-icon,
+#x-icon {
+  color: gray;
+}
+
+#check-icon {
+  position: absolute;
+  right: 17%;
+  top: 4%;
+}
+
+#x-icon {
+  position: absolute;
+  right: 7%;
+  top: 4%;
+}
 @media screen and (min-width: 751px) {
   .banner-heading {
     font-size: 80px;
@@ -92,7 +160,7 @@
     font-size: 18px;
   }
 
-  banner-wrap {
+  .banner-wrap {
     padding: 40px 15px 40px 15px;
     background-color: #fff79c;
   }
@@ -107,12 +175,20 @@
     left: 85%;
   }
 
-  .make-notes-btn {
+  .make-notes-btn,
+  .add-notes-btn {
     font-size: 16px;
   }
 
   .banner-wrap-contactus {
     padding: 40px 25px 40px 25px;
     margin-bottom: 50px;
+  }
+
+  .container-3 {
+    display: none;
+    position: absolute;
+    top: 26%;
+    left: 10%;
   }
 }
