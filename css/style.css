@@ -1,0 +1,95 @@
+* {
+  font-family: "Pangolin";
+}
+
+.make-notes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.make-notes-btn {
+  padding: 10px 40px 10px 40px;
+  font-size: 24px;
+}
+
+.banner-wrap {
+  padding: 120px 25px 120px 25px;
+  background-color: #fff79c;
+  border: 5px dashed black;
+  position: relative;
+}
+
+.home-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.banner-heading {
+  text-align: center;
+}
+
+.tagline-text {
+  text-align: center;
+  padding-left: 3em;
+}
+
+.pin {
+  position: absolute;
+  bottom: 85%;
+  left: 90%;
+}
+
+.nav-link {
+  font-size: 24px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 10px 30px;
+  z-index: 1000000;
+}
+
+@media screen and (min-width: 751px) {
+  .banner-heading {
+    font-size: 80px;
+  }
+
+  .tagline-text {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 750px) {
+  .banner-heading {
+    font-size: 40px;
+  }
+
+  .tagline-text {
+    font-size: 18px;
+  }
+
+  banner-wrap {
+    padding: 40px 15px 40px 15px;
+    background-color: #fff79c;
+  }
+
+  .home-container {
+    width: 80%;
+  }
+
+  .pin {
+    position: absolute;
+    bottom: 85%;
+    left: 85%;
+  }
+
+  .make-notes-btn {
+    font-size: 16px;
+  }
+}
