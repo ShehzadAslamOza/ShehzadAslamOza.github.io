@@ -3,34 +3,22 @@
   /* border: 2px solid red; */
 }
 
-.make-notes,
-.add-notes {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  z-index: 100;
-}
+/* Navbar */
 
-.make-notes a {
-  text-decoration: none;
-  color: white;
-  padding: 5px 40px 5px 40px;
-}
-.add-notes {
-  margin-bottom: 10px;
-}
-
-.make-notes-btn {
-  font-size: 24px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.add-notes-btn {
-  padding: 10px 40px 10px 40px;
+.nav-link {
   font-size: 24px;
 }
 
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 10px 30px;
+  z-index: 1000000;
+}
+
+/* banner wraps and containers */
 .banner-wrap,
 .banner-wrap-contactus {
   padding: 120px 25px 120px 25px;
@@ -46,9 +34,6 @@
   position: relative;
 }
 
-.form-btn {
-  float: right;
-}
 .banner-wrap-contactus {
   padding: 60px 25px 60px 25px;
   margin-bottom: 50px;
@@ -74,32 +59,9 @@
   padding-left: 3em;
 }
 
-.pin {
-  position: absolute;
-  bottom: 85%;
-  left: 90%;
-}
-
-.nav-link {
-  font-size: 24px;
-}
-
-.navbar-brand {
-  font-size: 30px;
-}
-
-.navbar {
-  box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 1px, rgba(0, 0, 0, 0.08) 0px 10px 30px;
-  z-index: 1000000;
-}
-
 .details {
   margin-top: 30px;
   margin-bottom: 0;
-}
-
-.form-control {
-  border: 3px dotted gray;
 }
 
 .container-2 {
@@ -115,6 +77,11 @@
   position: fixed;
   top: 30%;
   left: 40%;
+  z-index: 300;
+}
+/* forms */
+.form-control {
+  border: 3px dotted gray;
 }
 
 #note-text {
@@ -125,6 +92,8 @@
   height: 275px;
   padding: 40px 25px 25px 25px;
 }
+
+/* images and icons */
 
 #check-icon,
 #x-icon {
@@ -142,6 +111,49 @@
   right: 7%;
   top: 4%;
 }
+
+.pin {
+  position: absolute;
+  bottom: 85%;
+  left: 90%;
+}
+
+/* Buttons */
+
+.make-notes,
+.add-notes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.form-btn {
+  float: right;
+}
+
+.make-notes a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 40px 5px 40px;
+}
+.add-notes {
+  margin-bottom: 10px;
+}
+
+.make-notes-btn {
+  font-size: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.add-notes-btn {
+  padding: 10px 40px 10px 40px;
+  font-size: 24px;
+}
+
+/* Media Queries */
+
 @media screen and (min-width: 751px) {
   .banner-heading {
     font-size: 80px;
