@@ -94,3 +94,24 @@ function color() {
   }
   return random_color[i++];
 }
+
+window.addEventListener("scroll", function () {
+  var scrollTop =
+    window.pageYOffset !== undefined
+      ? window.pageYOffset
+      : (document.documentElement || document.body.parentNode || document.body)
+          .scrollTop;
+  console.log(scrollTop);
+
+  if (scrollTop > 220) {
+    var noteBTn = document.getElementsByClassName("add-notes")[0];
+    noteBTn.style.position = "fixed";
+    noteBTn.style.top = "40em";
+    noteBTn.style.right = "120px";
+  }
+
+  if (scrollTop <= 220) {
+    var noteBTn = document.getElementsByClassName("add-notes")[0];
+    noteBTn.style.position = "static";
+  }
+});
